@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidencia 2 - Programa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+</head>
+<body>
+    <div class="bg_container">
+        <div class="bg"></div>
+    </div>
+    <div class="container">
+        <div class="container_limit">
+            <p class="titulo"><strong>Evidencia de Aprendizaje 2:</strong><br>Programa Computacional</p>
+            <div class="gramatica">
+                <div class="g_left">
+                    <b>Componentes</b><br>
+                    <button class="btn" id="1" onclick="agregar('rg')">Agregar</button><span>w = rg</span><br>
+                    <button class="btn" id="2" onclick="agregar('01359')">Agregar</button><span>i = 01359</span><br>
+                    <button class="btn" id="3" onclick="agregar('gr')">Agregar</button><span>w' = gr</span><br>
+                    <button class="btn" id="4" onclick="agregar('julian')">Agregar</button><span>j = julian</span>
+                </div>
+                <div class="g_right">
+                    <b>Gramática</b>
+                    <p>i • w<sup>n</sup> • i • w'<sup>2n</sup> • j<sup>2</sup></p>
+                    <input type="number" placeholder="Indique el valor de N" id="L"><button class="btn" id="5" onclick="agregarExp()">Auto completar</button>
+                </div>
+            </div>
+            <input type="text" id="texto" placeholder="Ingresa una cadena">
+            <button onclick="obtenerCadena()">Validar</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
