@@ -14,11 +14,7 @@ function obtenerCadena() {
     const texto = document.getElementById('texto');
 
     // Obtener el valor de n mediante la repeticion de rg en la cadena
-    let n = texto.value.match('([r][g]){1,}') ? texto.value.match('([r][g]){1,}')[0].length / 2 : 0;
-
-    if (n == 0) {
-        n = 1;
-    }
+    let n = texto.value.match('([r][g]){1,}') ? texto.value.match('([r][g]){1,}')[0].length / 2 : 1;
 
     // Establecer el patron
     const patron = new RegExp(`^${i}{1}(${w}){${n}}${i}{1}(${wi}){${n * 2}}(${j}){2}$`);
@@ -42,10 +38,12 @@ function obtenerCadena() {
     }
 }
 
+// Funcion para agregar una cadena de texto al input
 function agregar(txt) {
     txtAdd.value += txt;
 }
 
+// Funcion para autocompletar el input segun el valor de N dado
 function agregarExp() {
     const L = document.getElementById('L').value;
 
