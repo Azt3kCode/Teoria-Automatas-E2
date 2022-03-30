@@ -1,6 +1,6 @@
 // Declarar constantes
 const w = '[r][g]'
-const i = '[0][1][3][5][9]';
+const i = '[1][9][0][9][5][5][3]';
 const wi = '[g][r]';
 const j = '[j][u][l][i][a][n]';
 
@@ -60,11 +60,11 @@ function agregarExp() {
     }
     else 
     {
-        txtAdd.value += '01359';
+        txtAdd.value += '1909553';
         for (let i = 0; i < L; i++) {
             txtAdd.value += 'rg';
         }
-        txtAdd.value += '01359';
+        txtAdd.value += '1909553';
         for (let i = 0; i < L; i++) {
             txtAdd.value += 'grgr';
         }
